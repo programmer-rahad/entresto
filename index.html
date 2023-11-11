@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entresto</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+    <header class="welcome-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <a href="#">
+                Français
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container text-center">
+            <div>
+                <h2>Welcome to <strong>ENTRESTO.ca</strong></h2>
+                <p>
+                    Please enter the following information to access the site. This information is collected in order
+                    <br class="d-none d-md-block"> to
+                    give you access to our site as a healthcare professional.
+                </p>
+                <form action="#" class="province-licence">
+                    <div>
+                        <select id="select_type">
+                            <option value="">I am a</option>
+                            <option value="physician">Physician</option>
+                            <option value="nurse">Nurse or Nurse Practitioner</option>
+                            <option value="pharmacist">Pharmacist</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="select_province">
+                            <option>Province</option>
+
+                            <option value="BC">British Columbia</option>
+
+                            <option value="AB">Alberta</option>
+
+                            <option value="SK">Saskatchewan</option>
+
+                            <option value="MB">Manitoba</option>
+
+                            <option value="ON">Ontario</option>
+
+                            <option value="QC">Quebec</option>
+
+                            <option value="NS">Nova Scotia</option>
+
+                            <option value="NB">New Brunswick</option>
+
+                            <option value="NL">Newfoundland and Labrador</option>
+
+                            <option value="PI">PEI</option>
+
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+                    <div class="medical-license-number">
+                        <input type="number" id="medical_license_number"
+                            placeholder="Enter your medical license number">
+                        <p class="warning error-text error-licence">
+                            <img src="assets/images/icons/1.svg" alt="">
+                            Please enter a valid license number.
+                        </p>
+                    </div>
+                    <button type="submit">Enter</button>
+
+                    <p class="warning error-text error-province">
+                        <img src="assets/images/icons/1.svg" alt="">
+                        Please ensure all required fields are completed.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="links text-center text-lg-start mb-4 mb-lg-0">
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+                |
+                <a href="terms-of-use.html">
+                    Terms of Use
+                </a>
+                | <a href="#">
+                    Cookie Settings
+                </a>
+            </div>
+            <div class="d-flex align-items-lg-end flex-column flex-lg-row">
+                <a href="#">
+                    <img src="assets/images/footer-logo.svg" alt="">
+                </a>
+                <p class="mt-3 mt-lg-0">
+                    Entresto is a registered trademark. <br>
+                    © Novartis Pharmaceuticals Canada Inc. 2022
+                </p>
+                <div class="footer-right mt-2 mt-lg-0">
+                    <p class="mb-3 mb-lg-0">
+                        187298E - July 2022
+                    </p>
+                    <img src="assets/images/footer-img-2.svg" alt="">
+                    <img src="assets/images/footer-img-3.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Popup -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- data-bs-backdrop="static" data-bs-keyboard="false" -->
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mt-2">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close-btn.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">
+                        ENTRESTO<sup>®</sup> (sacubitril/valsartan) is indicated for the treatment of heart failure with
+                        reduced ejection fraction (HFrEF) in patients with NYHA Class II or III, to reduce the incidence
+                        of cardiovascular death and heart failure hospitalization.
+
+                    </p>
+                    <p class="mb-4">
+                        ENTRESTO<sup>®</sup> should be administered in combination with other heart failure therapies,
+                        in place of an angiotensin-converting enzyme inhibitor (ACEi) or angiotensin II receptor blocker
+                        (ARB).
+                    </p>
+                    <p>
+                        Please refer to the ENTRESTO<sup>®</sup> Product Monograph at <a
+                            href="https://www.novartis.ca/entrestomonograph">www.novartis.ca/EntrestoMonograph</a> or <a
+                            href="important-safety-information.html">here</a> for
+                        important information regarding:
+                    </p>
+                    <ul class="mb-3 modal-list">
+                        <li class="d-flex align-items-start"><span>•</span> Caution in patients above 80 years of age
+                            and lack of established safety and
+                            efficacy in
+                            pediatric patients (&lt;18 years of age).</li>
+                        <li class="d-flex align-items-start">
+                            <span>•</span>
+                            <p>
+                                The safety and efficacy of ENTRESTO<sup class="diff-1">®</sup> in pediatric
+                                patients has not been
+                                established.
+                            </p>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <span>•</span>
+                            <p>
+                                Contraindications regarding recent symptomatic hypotension, concomitant use
+                                with any drug
+                                formulation containing an ACEi,
+                                known history of angioedema related to previous ACEi or ARB therapy, history of
+                                hereditary
+                                or idiopathic angioedema, the
+                                concomitant use with aliskiren-containing drugs in patients with diabetes mellitus (Type
+                                1
+                                or 2) or moderate to severe renal
+                                impairment (i.e., eGFR &lt;60 mL/min/1.73 m<sup>2</sup>), pregnancy and nursing women,
+                                and
+                                hypersensitivity to the active substance or any of the excipients.
+                            </p>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <span>•</span> The most serious warnings and precautions regarding the use of ARB in
+                            pregnancy,
+                            co-administration with ACEi and ARB
+                            treatments, NT-proBNP monitoring, and co-administration with medications known to raise
+                            potassium levels.
+                        </li>
+                        <li class="d-flex align-items-start"> <span>•</span> Other relevant warnings and precautions
+                            regarding co-administration with
+                            drugs containing
+                            an ARB or renin inhibitor, history of
+                            angioedema, symptomatic hypotension, hyperkalemia, decreases in renal function in
+                            susceptible individuals, patients with renal
+                            arterial stenosis, woman of child-bearing potential or those currently nursing a child,
+                            patients with severe hepatic impairment,
+                            and patients with severe renal impairment.</li>
+                        <li class="d-flex align-items-start">
+                            <span>•</span> Conditions of clinical use, adverse reactions, drug interactions, and dosing
+                            instructions.
+                        </li>
+
+                    </ul>
+                    <p>
+                        The Product Monograph is also available by calling 1-800-363-8883 or via
+                        medinfo.canada@novartis.com.
+                    </p>
+                    <div class="text-center mt-4 pt-2">
+                        <a href="hcp.html" class="common-button">
+                            Continue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
